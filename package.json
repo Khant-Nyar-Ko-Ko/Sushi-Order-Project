@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/Khant-Nyar-Ko-Ko/Sushi-Order-Project#readme",
   "dependencies": {
-    "bootstrap": "^5.2.3"
+    "animate.css": "^4.1.1",
+    "bootstrap": "^5.2.3",
+    "remixicon": "^2.5.0"
   }
 }
