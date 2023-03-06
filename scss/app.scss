@@ -3,19 +3,15 @@
 @import "../node_modules/remixicon/fonts/remixicon.css";
 @import "../node_modules/animate.css/animate.css";
 
-
-
-
 //Bootstrap Custom
 $navbar-nav-link-padding-x: 2rem;
-$font-family-sans-serif:Poppins;
+$font-family-sans-serif: Poppins;
 $font-size-base: 0.9rem;
 
 $body-bg: hsl(19, 100%, 96%);
-$body-color:hsl(19, 16%, 35%);
+$body-color: hsl(19, 16%, 35%);
 
-$primary:hsl(19, 64%, 54%);
-
+$primary: hsl(19, 64%, 54%);
 
 $btn-border-radius: 2rem;
 $btn-padding-x: 1.5rem;
@@ -25,8 +21,8 @@ $btn-font-size: 0.9rem;
 $spacer: 1rem;
 $spacers: (
   0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
   3: $spacer,
   4: $spacer * 1.5,
   5: $spacer * 3,
@@ -35,59 +31,139 @@ $spacers: (
   8: $spacer * 6,
   9: $spacer * 7,
   10: $spacer * 8,
-
 );
-
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
-body{
-    height: 3000px;
+body {
+  height: 3000px;
 }
 
-.title{
-    font-family:Lora;
-    color: hsl(19, 16%, 15%);;
+.title {
+  font-family: Lora;
+  color: hsl(19, 16%, 15%);
 }
 
-.sub-title{
-    font-family: "Dancing Script", cursive;
+nav{
+    background: $body-bg;
+}
+
+.sub-title {
+  font-family: "Dancing Script", cursive;
 }
 //Custom Css
-.navbar-brand-logo{
-    height: 2rem;
+.navbar-brand-logo {
+  height: 2rem;
 }
 
-.btn-primary,.btn-primary:hover,.btn-primary:active{
-    color: white;
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active {
+  color: white;
 }
 
-.btn-icon i{
-    font-size: 20px;
-    vertical-align: middle;
+.btn-icon i {
+  font-size: 20px;
+  vertical-align: middle;
 }
 
-.home-title img{
-    height: 50px;
+.home-title img {
+  height: 50px;
 }
 
-.dish-card{
-   background-color: hsl(19, 100%, 97%);
+#home {
+//   background: url("../img/leaf-branch-2.png") no-repeat top left,
+//     url("../img/leaf-branch-4.png") no-repeat bottom right;
+position: relative;
 }
 
-.dish-card img{
-    transform: translateY(-50px);
-    transition: 0.5s;
+#home::before{
+    content: url("../img/leaf-branch-2.png");
+    position: absolute;
+    opacity: 0.2;
+    transform: translateX(-50px) rotate(90deg);
+    z-index: -1;
 }
 
-.dish-card img:hover{
-    transform: translateY(-60px);
+#home::after{
+    content: url("../img/leaf-branch-4.png");
+    position: absolute;
+    opacity: 0.2;
+    transform: translateX(131px) translateY(-80px) rotate(335deg); 
+    bottom: 0;
+    right: 0;
+    z-index: -1;
 }
 
-.footer-card{
-    display: flex;
-    justify-content: end;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+#about{
+  position: relative;
+}
+
+#about::after{
+  content: url("../img/leaf-branch-1.png");
+  position: absolute;
+  opacity: 0.2;
+  transform: translateY(450px) translateX(149px) rotate(329deg); 
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+#recent{
+  position: relative;
+}
+
+#recent::after{
+  content: url("../img/leaf-branch-3.png");
+  position: absolute;
+  opacity: 0.2;
+  transform: translateX(34px) translateY(-722px) rotate(299deg); 
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+
+#footer{
+  position: relative;
+}
+// #footer::after{
+//   content: url("../img/spinach-leaf.png");
+//   position: absolute;
+//   transform: translateX(106px) translateY(-330px) rotate(40deg) ; 
+//   top: 0;
+//   right: 0;
+// }
+
+
+
+.dish-card {
+  background-color: hsl(19, 100%, 97%);
+}
+
+.dish-card img {
+  transform: translateY(-50px);
+  transition: 0.5s;
+}
+
+.dish-card img:hover {
+  transform: translateY(-60px);
+}
+
+.footer-card {
+  display: flex;
+  justify-content: end;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.newsletter{
+    border-radius: 2rem;
+}
+
+@include media-breakpoint-down(md){
+    .newsletter{
+        border-radius: 0rem;
+    }
 }

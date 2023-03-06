@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-transparent fixed-top ">
+  <nav class="navbar navbar-expand-lg fixed-top ">
     <div class="container">
       <a class="navbar-brand" href="./index.html">
         <img src="./img/logo.png" class="navbar-brand-logo" alt="">Sushi
@@ -22,16 +22,16 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
+            <a class="nav-link" href="#about">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Popular</a>
+            <a class="nav-link" href="#popular">Popular</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Recently</a>
+            <a class="nav-link" href="#recent">Recently</a>
           </li>
         </ul>
         <div class="">
@@ -42,20 +42,20 @@
   </nav>
 
   <main>
-    <section id="home">
+    <section id="home" style="overflow: hidden;">
       <div class="container">
-        <div class="row justify-content-center align-items-center min-vh-100">
+        <div class="row justify-content-center align-items-center align-content-center min-vh-100">
           <div class="col-12 col-md-5 col-xl-4">
-            <div class="animate__animated animate__fadeInDown ">
+            <div class="animate__animated animate__fadeInDown text-center text-md-start mb-5 mb-md-0 ">
               <div class="home-title title mb-4">
                 <h1 class=" display-5">Enjoy Delicious</h1>
-                <div class="d-flex">
+                <div class="d-flex justify-content-center justify-content-md-start">
                   <img src="./img/home-sushi-title.png" alt="" class=" me-2">
                   <h1 class=" display-5">Sushi Food</h1>
                 </div>
               </div>
 
-              <p class=" w-75  mb-4">Enjoy a good dinner with the best dishes in
+              <p class=" w-75 mx-auto ms-md-0 mb-4">Enjoy a good dinner with the best dishes in
                 the restaurant and improve your day.</p>
 
               <a href="" class=" btn btn-primary btn-icon">Order Now
@@ -70,13 +70,13 @@
       </div>
     </section>
 
-    <section id="about" class=" mb-9">
+    <section id="about" class=" py-9">
       <div class="container">
         <div class="row justify-content-center align-items-center ">
-          <div class="col-md-4">
+          <div class="col-md-5 col-lg-4">
             <img src="./img/about-sushi.png" class=" d-block w-100 animate__animated animate__fadeInDown" alt="">
           </div>
-          <div class="col-md-4 offset-1">
+          <div class="col-md-6 col-lg-4 offset-1">
             <div class="animate__animated animate__fadeInUp">
               <div class="">
                 <h3 class="text-primary sub-title">About Us</h3>
@@ -101,7 +101,7 @@
       </div>
     </section>
 
-    <section id="popular" class=" mb-9">
+    <section id="popular" class=" py-9">
       <div class="container">
         <div class="row mb-9">
           <div class="col-12">
@@ -112,8 +112,8 @@
           </div>
         </div>
         <div class="row justify-content-center align-items-center">
-          <div class="col-md-3">
-            <div class="dish-card shadow rounded-4 p-4 pt-0">
+          <div class="col-md-4 col-lg-3">
+            <div class="dish-card  shadow rounded-4 mb-7 mb-md-0 p-4 pt-0">
               <img src="./img/popular-onigiri.png" class=" w-100 d-block" alt="">
               <div class=" text-center">
                 <p class=" h4">Onigiri</p>
@@ -123,8 +123,8 @@
 
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="dish-card shadow rounded-4 p-4 pt-0">
+          <div class="col-md-4 col-lg-3">
+            <div class="dish-card shadow rounded-4 mb-7 mb-md-0 p-4 pt-0">
               <img src="./img/popular-spring-rols.png" class=" w-100 d-block" alt="">
               <div class=" text-center">
                 <p class=" h4">Spring Rolls</p>
@@ -134,8 +134,8 @@
 
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="dish-card shadow rounded-4 p-4 pt-0">
+          <div class="col-md-4 col-lg-3">
+            <div class="dish-card shadow rounded-4 mb-7 mb-md-0 p-4 pt-0">
               <img src="./img/popular-sushi-rolls.png" class=" w-100 d-block" alt="">
               <div class=" text-center">
                 <p class=" h4">Sushi Rolls</p>
@@ -149,12 +149,12 @@
       </div>
     </section>
 
-    <section id="recent" class=" mb-9">
+    <section id="recent" class=" py-9">
       <div class="container">
         <div class="row mb-9 justify-content-center align-items-center ">
-          <div class="col-md-4">
+          <div class="col-md-6 col-lg-4">
             <div class="animate__animated animate__fadeInUp">
-              <div class="">
+              <div class="mb-7 mb-md-0">
                 <h3 class="text-primary sub-title">Recently Added</h3>
                 <div class="home-title title mb-4">
                   <div class="d-flex">
@@ -180,30 +180,37 @@
               alt="">
           </div>
         </div>
-        <div class="row bg-dark rounded-5 p-5 mb-9 justify-content-center align-items-center ">
-          <div class="col-md-4">
-            <img src="./img/newsletter-sushi.png" class=" d-block w-100 animate__animated animate__fadeInDown" alt="">
-          </div>
-          <div class="col-md-5 offset-1">
-            <div class="animate__animated animate__fadeInUp">
-              <div class="">
-                <h3 class="text-primary sub-title">Newsletter</h3>
-                <div class="home-title text-white title mb-4">
-                  <h1 class="mb-4">Subscribe For <br>
-                    Offer Updates</h1>
-                  <div class=" bg-white rounded-pill d-flex align-items-center g-0 ps-4 p-2">
-                    <input type="text" placeholder="Enter email"
-                      class=" form-control bg-transparent bottom-0 me-1 flex-grow-1">
-                    <button class="btn btn-primary btn-icon text-nowrap">
-                      Subscribe<i class="ri-send-plane-2-fill"></i>
-                    </button>
+        <div class="">
+          <div class="container bg-dark rounded-5 newsletter">
+            <div class="row  p-5 mb-9 justify-content-center align-items-center ">
+              <div class="col-md-5 col-lg-4">
+                <img src="./img/newsletter-sushi.png" class=" d-block w-100 animate__animated animate__fadeInDown" alt="">
+              </div>
+              <div class="col-md-6 col-lg-6 col-xl-5 offset-xl-1">
+                <div class="animate__animated animate__fadeInUp">
+                  <div class="p-3 p-lg-5">
+                    <h3 class="text-primary sub-title">Newsletter</h3>
+                    <div class="home-title text-white title mb-4">
+                      <h1 class="mb-4">Subscribe For <br>
+                        Offer Updates</h1>
+    
+                    </div>
+                    <div class=" bg-white rounded-pill d-flex align-items-center ps-4 p-2">
+                      <input type="text" placeholder="Enter email"
+                        class="form-control bg-transparent bottom-0 me-1 flex-grow-1 border-0">
+                      <button class="btn btn-primary btn-icon text-nowrap">
+                        <span class="d-none d-md-none d-lg-inline">Subscribe</span>
+                        <i class="ri-send-plane-2-fill"></i>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
+    
             </div>
           </div>
-
         </div>
+
 
       </div>
       </div>
